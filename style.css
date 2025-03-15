@@ -5,18 +5,74 @@ body {
     display: flex;
 }
 aside {
-    width: 250px; /* Ancho de la barra lateral */
-    background-color: #2E8B57; /* Verde oscuro */
-    color: white; /* Texto en blanco */
+    width: 250px;
+    background-color: #2E8B57;
+    color: white;
     padding: 20px;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    position: fixed; /* Fija el aside a la izquierda */
+    height: 100vh;
+    position: fixed; 
     left: 0;
     top: 0;
-    overflow-y: auto; /* Permite hacer scroll si el contenido es largo */
+    overflow-y: auto; 
 }
 
 .main-body {
-    margin-left: 320px; /* Para evitar que el contenido se solape con el aside */
+    margin-left: 320px;
     padding: 20px;
+}
+
+/* Contenedor del carrusel */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de las diapositivas */
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cada slide */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none; /* Se ocultan todas excepto la activa */
+}
+
+/* Mostrar solo la diapositiva activa */
+.slide.active {
+    display: block;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: black;
 }
