@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Felipe Rojas Hernandez</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -73,38 +73,59 @@
                     <div class="slide active">
                         <h3>Práctica Curricular (SENA), Aprendiz, Campoalegre</h3>
                         <time>Febrero 2021 – Septiembre 2021</time>
-                        <p>Desarrollé un aplicativo web en Laravel para la administración del parque automotor...</p>
+                        <p>Bajo el alcance de la formación por proyectos , con un grupo de trabajo diseñamos y desarrollamos un aplicativo web que facilita la administración del parque automotor de la organización. Códificado en el framework Laravel y haciendo uso de la plantilla Admin LTE.</p>
                     </div>
         
                     <div class="slide">
                         <h3>Práctica ElectroHuila, Tester, Neiva</h3>
                         <time>Octubre 2021 – Marzo 2022</time>
-                        <p>Realicé tareas de desarrollo frontend con Angular y diseño de vistas con Adobe XD...</p>
+                        <p>Ejecuté tareas en el área de desarrollo tales como levantamiento de información, diseño de vistas haciendo uso de la herramienta Adobe XD, y en el área de desarrollo frontend realicé tareas en el Framework Angular.</p>
                     </div>
         
                     <div class="slide">
                         <h3>Proyecto de redes, Universidad EAN, Bogotá</h3>
                         <time>Julio 2024 – Diciembre 2025</time>
-                        <p>Diseñé una red VPN para conectar usuarios de manera remota y segura a la red corporativa...</p>
+                        <p>Ejecuté tareas en el área de desarrollo tales como levantamiento de información, diseño de vistas haciendo uso de la herramienta Adobe XD, y en el área de desarrollo frontend realicé tareas en el Framework Angular.</p>
                     </div>
         
                     <div class="slide">
                         <h3>API Riot Games</h3>
-                        <p>Desarrollé una API para visualizar información sobre campeones y partidas jugadas...</p>
+                        <p>Desarrollé una aplicación que permite hacer peticiones HTTP y consultas simples que permiten visualizar información básica al usuario, tales como la maestría que tienen con un campeón y su historial de partidas jugadas.</p>
                     </div>
                 </div>
         
                 <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
         </section>
-        <div class="studies">
-            <h3>Formación</h3>
-            <ul>
-                <li>Tecnólogo en Análisis y Desarrollo de Sistemas de Información, SENA, Campoalegre</li>
-                <li>Ingeniería de Sistemas, Universidad EAN, Bogotá</li>
-                <li>Cursos LinkedIn Premium, LinkedIn</li>
-            </ul>
-        </div>
+        <section class="education">
+            <h2>Formación</h2>
+            <div class="carousel">
+                <button class="prev" onclick="moveEducationSlide(-1)">&#10094;</button>
+        
+                <div class="carousel-container">
+                    <div class="edu-slide active">
+                        <img src="/public/images/sena_logo.png" alt="SENA">
+                        <h3>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
+                        <p>SENA - Campoalegre</p>
+                        <time>2020 - 2022</time>
+                    </div>
+                    <div class="edu-slide">
+                        <img src="/public/images/ean_logo.png" alt="Universidad EAN">
+                        <h3>Ingeniería de Sistemas</h3>
+                        <p>Universidad EAN - Bogotá</p>
+                        <time>2022 - Presente (7° semestre)</time>
+                    </div>
+        
+                    <div class="edu-slide">
+                        <img src="/public/images/linkedin_logo.png" alt="LinkedIn Learning">
+                        <h3>Cursos LinkedIn Premium</h3>
+                        <p>LinkedIn Learning</p>
+                        <time>2023 - Presente</time>
+                    </div>
+                </div>
+                <button class="next" onclick="moveEducationSlide(1)">&#10095;</button>
+            </div>
+        </section>
     </div>
 </body>
 </html>

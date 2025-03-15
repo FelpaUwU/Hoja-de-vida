@@ -76,3 +76,49 @@ aside {
 .prev:hover, .next:hover {
     background-color: black;
 }
+
+
+/* Cada slide */
+.edu-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none; /* Se ocultan todas excepto la activa */
+    text-align: center;
+}
+
+.edu-slide.active {
+    display: block;
+}
+
+/* Imagen en cada card */
+.edu-slide img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: black;
+}

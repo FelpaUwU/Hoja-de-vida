@@ -22,3 +22,29 @@ function moveSlide(step) {
 
 
 showSlide(currentSlide);
+
+
+let currentEducationSlide = 0;
+const eduSlides = document.querySelectorAll(".edu-slide");
+
+function showEducationSlide(index) {
+    eduSlides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) {
+            slide.classList.add("active");
+        }
+    });
+}
+
+function moveEducationSlide(step) {
+    currentEducationSlide += step;
+    if (currentEducationSlide >= eduSlides.length) {
+        currentEducationSlide = 0;
+    } else if (currentEducationSlide < 0) {
+        currentEducationSlide = eduSlides.length - 1;
+    }
+    showEducationSlide(currentEducationSlide);
+}
+
+// Inicializar el carrusel con la primera slide
+showEducationSlide(currentEducationSlide);
