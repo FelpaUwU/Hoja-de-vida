@@ -122,3 +122,37 @@ aside {
 .prev:hover, .next:hover {
     background-color: black;
 }
+.skills {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #4CAF50, #2E8B57);
+    transition: width 1.5s ease-in-out;
+    border-radius: 6px;
+}

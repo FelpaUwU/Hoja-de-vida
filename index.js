@@ -46,5 +46,15 @@ function moveEducationSlide(step) {
     showEducationSlide(currentEducationSlide);
 }
 
-// Inicializar el carrusel con la primera slide
+
 showEducationSlide(currentEducationSlide);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".progress");
+
+    progressBars.forEach(bar => {
+        const targetWidth = bar.getAttribute("data-width");
+        bar.style.width = targetWidth + "%";
+    });
+});
+
