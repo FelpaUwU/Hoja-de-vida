@@ -64,6 +64,19 @@ aside {
     font-size: 18px;
     border-radius: 50%;
 }
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.imagen-perfil{
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+    margin: auto;
+    width: 250px;
+}
 
 .prev {
     left: 10px;
@@ -155,4 +168,28 @@ aside {
     background: linear-gradient(90deg, #4CAF50, #2E8B57);
     transition: width 1.5s ease-in-out;
     border-radius: 6px;
+}
+
+.profile-card {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.profile-card h2 {
+    color: #2E8B57;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
 }

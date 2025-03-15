@@ -58,3 +58,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+$(document).ready(function () {
+    let modoOscuro = false; // Estado del modo
+
+    $('#btn-cambiar').click(function () {
+        if (!modoOscuro) {
+            // Activar Modo Oscuro
+            $('body').css('background', '#121212');
+            $('.tarjeta').css('background', '#1e1e1e');
+            $('.tarjeta').css('color', 'white');
+            $('.nombre p, .titulo p, .descripcion p').css('color', 'white');
+            $(this).text("Modo Claro");
+        } else {
+            // Volver al Modo Original
+            $('body').css('background', 'white');
+            $('.tarjeta').css('background', 'radial-gradient(circle, rgba(0,255,255,1) 0%, rgba(255,0,255,1) 100%)');
+            $('.tarjeta').css('color', 'black');
+            $('.nombre p, .titulo p, .descripcion p').css('color', 'black');
+            $(this).text("Modo Oscuro");
+        }
+        
+        modoOscuro = !modoOscuro; // Alternar estado
+    });
+});
+

@@ -6,12 +6,15 @@
     <title>Juan Felipe Rojas Hernandez</title>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <aside>
-        <div class="photo">
-            <img src="" alt="">
-        </div>
+        <section class="foto">
+            <div class="foto-perfil">
+                <img src="Public/images/yo.jpg" alt="Yo" class="imagen-perfil">
+            </div>
+        </section>
         <div class="name">
             <h1>Juan Felipe Rojas Hernandez</h1>
         </div>
@@ -94,7 +97,7 @@
         </div>
     </aside>
     <div class="main-body">
-        <div class="profile">
+        <div class="profile-card">
             <h2>Perfil</h2>
             <p>Ingeniero de Sistemas con habilidades en desarrollo backend, redes de
                 telecomunicaciones y bases de datos y estructuras de datos. Especializado en
@@ -165,6 +168,9 @@
                 <button class="next" onclick="moveEducationSlide(1)">&#10095;</button>
             </div>
         </section>
+    </div>
+    <div class="boton">
+        <button id="btn-cambiar" class="btn">Cambiar Estilo</button>
     </div>
 </body>
 </html>
